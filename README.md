@@ -26,8 +26,7 @@ Licensing
 Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 
 Support:
-🔹Beta testing community available, find links in the bot builder or here https://discord.gg/wgyT65V9Yy
-      🔹or here https://discord.gg/the-studio (RP community as well as support)
+🔹email me at allthingsai@artificially.space or https://discord.gg/allthingsai
       
 Remember: This is a collaborative tool, not a professional service. Your creativity and feedback help mold its future, but ultimately, you are now and independent bot creator and what you do with this bot now is all up to you. Be responsible!!! Keep your spicy bots a secret!!!
 
