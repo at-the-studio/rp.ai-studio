@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RP.ai Studio - Create AI Characters You Actually Own</title>
+    <title>StudioAI Roleplay Bot - Create AI Characters You Actually Own</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -343,7 +343,7 @@
     <div id="opening-screen" class="overlay-screen active" onclick="this.classList.add('fade-out')">
         <div class="splash-container">
             <div class="splash-logo-container">
-                <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="splash-logo-image">
+                <img src="https://i.imgur.com/NpShc38.png" alt="RP.ai Studio" class="splash-logo-image">
             </div>
             
             <div class="splash-tagline">
@@ -379,7 +379,7 @@
             <div class="divider"></div>
             
             <div class="credits-logo-container mb-6" style="display: flex; justify-content: center; align-items: center;">
-                <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="credits-logo-image">
+                <img src=https://i.imgur.com/NpShc38.png" alt="RP.ai Studio" class="credits-logo-image">
             </div>
             
             <div class="credit-text mb-4">
@@ -400,7 +400,7 @@
     <div class="container mx-auto p-4 md:p-8 max-w-4xl">
         <header class="text-center mb-8">
             <div class="header-logo-container mb-6">
-                <img src="https://i.imgur.com/yHlrMXh.png" alt="RP.ai Studio" class="header-logo-image mx-auto">
+                <img src="https://i.imgur.com/NpShc38.png" alt="RP.ai Studio" class="header-logo-image mx-auto">
             </div>
             <p class="text-sm" style="color: #f5e6d3;">Create Discord bots with Silly Tavern compatible character cards.</p>
 <p>🔹—💠—💎—💠—🔹</p>            
@@ -665,7 +665,7 @@
             <!-- Section 4: Memory System Choice -->
             <section>
                 <h2 class="text-2xl font-bold mb-2 text-pink-300">💠Memory System💠</h2>
-                <p class="mb-4" style="color: #f5e6d3;">The Bot Builder memory system is under construction currently! We will update you in Lemon Land when the Advanced memory is ready. Thank you!</p>
+                <p class="mb-4" style="color: #f5e6d3;">The Bot Builder is a basic blueprint for a discord bot without a long term memory. We suggest researchng ChromaDB or similar for implementing a memory.</p>
                 <div class="space-y-4">
                     <div class="bg-gray-700 p-4 rounded-lg">
                         <label class="flex items-start cursor-pointer">
@@ -681,7 +681,7 @@
                             <input type="radio" name="memory_type" value="advanced" class="mt-1 mr-3" onchange="toggleMemoryFields()">
                             <div>
                                 <span class="font-medium text-white">Advanced Memory with AI Summaries</span>
-                                <p class="text-sm mt-1" style="color: #f5e6d3;">Intelligent conversation summaries using Groq's FREE API. Remembers important details forever.</p>
+                                <p class="text-sm mt-1" style="color: #f5e6d3;"> If you want to build a memory we suggest you use groq for Intelligent conversation summaries using Groq's FREE API. Remembers important details forever.</p>
                             </div>
                         </label>
                     </div>
@@ -719,7 +719,6 @@
                         <select id="api_provider" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" onchange="updateApiEndpoint()">
                             <option value="">Select AI Provider...</option>
                             <option value="electronhub">ElectronHub</option>
-                            <option value="llm.vin">llm.vin</option>
                             <option value="openrouter">OpenRouter</option>
                         </select>
                     </div>
@@ -829,9 +828,9 @@
         <footer class="text-center mt-8 text-sm text-gray-500">
             <p>💠Built in collaboration with MJ, Gemini 2.5 and Claude 4💠</p>
             <p class="mt-4">
-                <span style="color: #ffb3d9; font-weight: 500;">RP.ai Studio</span> © 2025 is licensed under <br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: #ffb3d9;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a><br><br>
-                <a href="https://discord.gg/fq77MNg87k" target="_blank" style="color: #ffb3d9; text-decoration: none;">🍋 Lemon Land Support</a> | 
-                <a href="https://discord.gg/the-studio" target="_blank" style="color: #ffb3d9; text-decoration: none;">🎭 The Studio RP</a>
+                <span style="color: #ffb3d9; font-weight: 500;">StudioAI Bot Builder</span> © 2026 is licensed under <br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: #ffb3d9;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a><br><br>
+                <span style="color: #ffb3d9; font-weight: 500;">Find support in our Discord Server!</span></a> | 
+                <a href="https://discord.gg/studioAI" target="_blank" style="color: #ffb3d9; text-decoration: none;">Join us on Discord</a>
             </p>
         </footer>
     </div>
@@ -887,13 +886,6 @@ API_PROVIDERS = {
         "endpoint": "https://api.electronhub.ai/v1/chat/completions",
         "models": ["claude-3-5-sonnet", "gpt-4o", "gemini-pro"],
         "signup_url": "https://electronhub.ai",
-        "rp_friendly": True
-    },
-    "llm.vin": {
-        "name": "LLM.vin",
-        "endpoint": "https://api.llm.vin/v1/chat/completions",
-        "models": ["claude-3-5-sonnet", "gpt-4o", "gemini-pro"],
-        "signup_url": "https://platform.llm.vin/api-keys",
         "rp_friendly": True
     },
     "openrouter": {
@@ -1337,16 +1329,13 @@ async def info(ctx):
 /clear - Clear recent messages
 /private - Private conversation
 /memory - View conversation memory
-/save_memory - Save permanent memory
 /configure_api - Setup API provider
 /switch_provider - Quick provider switch
 /test_api - Test API connection
 /api_status - View API settings
-/update_bot - Get latest features
 /temperature - Adjust creativity (0-2)
 /top_p - Adjust vocabulary (0-1)
 /model_settings - View AI settings
-/feedback - Send feedback"""
     await ctx.send(info_text)
 
 @bot.command(name='help')
@@ -1686,7 +1675,6 @@ class ProviderSelectView(discord.ui.View):
         placeholder="Choose an API provider...",
         options=[
             discord.SelectOption(label="ElectronHub", description="Optimized for roleplay & characters", value="electronhub", emoji="⚡"),
-            discord.SelectOption(label="LLM.vin", description="Get your API key from platform", value="llm.vin", emoji="🔑"),
             discord.SelectOption(label="OpenRouter", description="Access 100+ AI models, pay per use", value="openrouter", emoji="🌐")
         ]
     )
@@ -1765,31 +1753,6 @@ async def api_status(interaction: discord.Interaction):
     embed.add_field(name="API Key", value="Configured ✅" if API_KEY else "Missing ❌", inline=True)
     
     await interaction.response.send_message(embed=embed, ephemeral=True)
-
-@bot.tree.command(name="update_bot", description="Get latest bot features and updates")
-async def update_bot(interaction: discord.Interaction):
-    embed = discord.Embed(
-        title="🔧 Bot Updates Available!",
-        description="Get the latest features, bug fixes, and improvements for your bot!",
-        color=0x00ff00
-    )
-    embed.add_field(name="What's New", value="• Self-configuring API system\n• Multiple provider support\n• Enhanced memory management\n• Better roleplay features", inline=False)
-    embed.add_field(name="How to Update", value="1. Visit the builder\n2. Import your character\n3. Download updated files\n4. Replace your bot files", inline=False)
-    
-    view = discord.ui.View()
-    view.add_item(discord.ui.Button(label="🚀 Go to Bot Builder", url="https://mjladiosa.github.io/builder/", style=discord.ButtonStyle.link))
-    
-    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
-
-@bot.tree.command(name="feedback", description="Submit beta testing feedback")
-async def feedback(interaction: discord.Interaction):
-    await interaction.response.send_modal(FeedbackModal())
-
-class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
-    feedback = discord.ui.TextInput(label='Feedback', style=discord.TextStyle.paragraph, max_length=2000, required=True)
-    async def on_submit(self, interaction: discord.Interaction):
-        await interaction.response.send_message("Thanks for your feedback! 💜", ephemeral=True)
-</template>
 
 <template id="advanced-slash-commands">
 @bot.tree.command(name="activate", description="Activate %%CHAR_NAME%% in this channel")
@@ -1974,31 +1937,6 @@ async def api_status(interaction: discord.Interaction):
     embed.add_field(name="API Key", value="Configured ✅" if API_KEY else "Missing ❌", inline=True)
     
     await interaction.response.send_message(embed=embed, ephemeral=True)
-
-@bot.tree.command(name="update_bot", description="Get latest bot features and updates")
-async def update_bot(interaction: discord.Interaction):
-    embed = discord.Embed(
-        title="🔧 Bot Updates Available!",
-        description="Get the latest features, bug fixes, and improvements for your bot!",
-        color=0x00ff00
-    )
-    embed.add_field(name="What's New", value="• Self-configuring API system\n• Multiple provider support\n• Enhanced memory management\n• Better roleplay features", inline=False)
-    embed.add_field(name="How to Update", value="1. Visit the builder\n2. Import your character\n3. Download updated files\n4. Replace your bot files", inline=False)
-    
-    view = discord.ui.View()
-    view.add_item(discord.ui.Button(label="🚀 Go to Bot Builder", url="https://mjladiosa.github.io/builder/", style=discord.ButtonStyle.link))
-    
-    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
-
-@bot.tree.command(name="feedback", description="Submit beta testing feedback")
-async def feedback(interaction: discord.Interaction):
-    await interaction.response.send_modal(FeedbackModal())
-
-class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
-    feedback = discord.ui.TextInput(label='Feedback', style=discord.TextStyle.paragraph, max_length=2000, required=True)
-    async def on_submit(self, interaction: discord.Interaction):
-        # You can add code here to send the feedback to a specific channel
-        await interaction.response.send_message("Thanks for your feedback! 💜", ephemeral=True)
 </template>
 
     </div>
@@ -2088,12 +2026,6 @@ class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
                     models: 'claude-3-5-sonnet, gpt-4o, gemini-pro',
                     signup: 'https://electronhub.ai',
                     info: '⚡ Optimized for roleplay & characters! <a href="https://electronhub.ai" target="_blank" class="text-pink-300 hover:text-pink-300">Sign up at electronhub.ai</a>'
-                },
-                'llm.vin': {
-                    endpoint: 'https://api.llm.vin/v1/chat/completions',
-                    models: 'claude-3-5-sonnet, gpt-4o, gemini-pro',
-                    signup: 'https://platform.llm.vin/api-keys',
-                    info: '🔑 Get your API key! <a href="https://platform.llm.vin/api-keys" target="_blank" class="text-pink-300 hover:text-pink-300">platform.llm.vin/api-keys</a>'
                 },
                 'openrouter': {
                     endpoint: 'https://openrouter.ai/api/v1/chat/completions',
@@ -2436,7 +2368,7 @@ class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
                     scenario: document.getElementById('scenario').value,
                     first_mes: document.getElementById('first_mes').value,
                     mes_example: document.getElementById('mes_example').value,
-                    creator_notes: `Created with the Universal Bot Builder.`,
+                    creator_notes: `Created with StudioAI bot builder - https://discord.gg/studioai`,
                     system_prompt: document.getElementById('system_prompt').value,
                     post_history_instructions: document.getElementById('post_history_instructions').value,
                     tags: tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(t => t) : [],
@@ -2731,4 +2663,5 @@ AI_MODEL=${document.getElementById('ai_model').value}`;
 </body>
 
 </html>
+
 
