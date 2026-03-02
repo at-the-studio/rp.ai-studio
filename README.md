@@ -26,7 +26,7 @@ Licensing
 Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 
 Support:
-🔹email me at allthingsai@artificially.space or https://discord.gg/allthingsai
+🔹email me at info@at-the.studio or https://discord.gg/studioAI
       
 Remember: This is a collaborative tool, not a professional service. Your creativity and feedback help mold its future, but ultimately, you are now and independent bot creator and what you do with this bot now is all up to you. Be responsible!!! Keep your spicy bots a secret!!!
 
